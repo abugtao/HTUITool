@@ -59,7 +59,7 @@
 		CE12215620FC3C99002E3563 /* HTTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTool.m; sourceTree = "<group>"; };
 		CE12215720FC3C99002E3563 /* HTTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTool.h; sourceTree = "<group>"; };
 		D12BF5B7B9DA44D4B948CB596D87F8D1 /* Pods-HTUITool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTUITool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DE096597A70F33B51836759B57573121 /* HTUITool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HTUITool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DE096597A70F33B51836759B57573121 /* HTUITool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HTUITool.podspec; sourceTree = "<group>"; };
 		E476D45397E3793FA31EFA4AA419D608 /* HTUITool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTUITool.modulemap; sourceTree = "<group>"; };
 		E68BEAF5D389A6D95729491402E1D330 /* HTUITool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTUITool-dummy.m"; sourceTree = "<group>"; };
 		E8D6FBA6921F98652F40862092C6E706 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
