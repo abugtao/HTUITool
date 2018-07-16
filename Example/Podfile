@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HTUITool_Example' do
+  pod 'HTUITool', :path => '../'
+
+  target 'HTUITool_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
