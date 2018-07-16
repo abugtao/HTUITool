@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3C1520839FC50DC43F13D7F55F2FF8B3 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 7225DE3A14EB2B9BF878B7AD4BB5AD70 /* ReplaceMe.m */; };
 		3D3D2AF69F5AC67FF305D9E2A96E4719 /* Pods-HTUITool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02D83BB200E956A8244370F584C7FC7A /* Pods-HTUITool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		511008C52BF40924FF95B5218A941707 /* Pods-HTUITool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 315E2140389398180E7766C11753626B /* Pods-HTUITool_Example-dummy.m */; };
 		6C13CB896E6C96377F066084D80FD2D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		945B524122B73A005748D3D8A832DB56 /* HTUITool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F02DB969408C31975A06035FB74E56F /* HTUITool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7EF7E32AA4C07F2459A35C001B34CD7 /* HTUITool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E68BEAF5D389A6D95729491402E1D330 /* HTUITool-dummy.m */; };
 		CDDAC7334A2D7F9BD6566FC91A7E4781 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CE12215A20FC4409002E3563 /* UILabel+HTHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CE12215820FC4409002E3563 /* UILabel+HTHelper.h */; };
+		CE12215B20FC4409002E3563 /* UILabel+HTHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE12215920FC4409002E3563 /* UILabel+HTHelper.m */; };
 		E5F32A9912DF666B69933AAF4D5A03B8 /* Pods-HTUITool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF95C1238EAB5930B6F9A22ED0CBE862 /* Pods-HTUITool_Tests-dummy.m */; };
 		F029F531F9C949BA40FC0029FCCC576F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F411980D2A8F7DB3436C02ED071B54DA /* Pods-HTUITool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9176D4A5CF83852AE47FE72E47C4F673 /* Pods-HTUITool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,7 +47,6 @@
 		531991B31B6C0333C06B68DE20E2EB0B /* Pods-HTUITool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HTUITool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5792DB2394E510B46C843310C2559C49 /* Pods-HTUITool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTUITool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7225DE3A14EB2B9BF878B7AD4BB5AD70 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = HTUITool/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		8351FBB3A4DDB8413BF7EFBD980D9ACB /* HTUITool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTUITool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1F255A7A875889529E049E8D652AA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DA73DB0EDD7B056FE54D0D694724482 /* HTUITool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTUITool.xcconfig; sourceTree = "<group>"; };
@@ -56,8 +56,8 @@
 		AB247256504278825175050DD2BCD45D /* Pods_HTUITool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTUITool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3AEDA830F5AD359DD4A3830FE85495 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5C894D5AA041EBBEE44AE146BB33257 /* Pods-HTUITool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTUITool_Tests-resources.sh"; sourceTree = "<group>"; };
-		CE12215620FC3C99002E3563 /* HTTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTool.m; sourceTree = "<group>"; };
-		CE12215720FC3C99002E3563 /* HTTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTool.h; sourceTree = "<group>"; };
+		CE12215820FC4409002E3563 /* UILabel+HTHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HTHelper.h"; sourceTree = "<group>"; };
+		CE12215920FC4409002E3563 /* UILabel+HTHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HTHelper.m"; sourceTree = "<group>"; };
 		D12BF5B7B9DA44D4B948CB596D87F8D1 /* Pods-HTUITool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTUITool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DE096597A70F33B51836759B57573121 /* HTUITool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = HTUITool.podspec; sourceTree = "<group>"; };
 		E476D45397E3793FA31EFA4AA419D608 /* HTUITool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTUITool.modulemap; sourceTree = "<group>"; };
@@ -146,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				CE12215520FC3C99002E3563 /* tool */,
-				7225DE3A14EB2B9BF878B7AD4BB5AD70 /* ReplaceMe.m */,
 				52AAADF80646B92C6712D1BA44BB1DF8 /* Pod */,
 				7E60739EE85921E85B44EB9EC7B92FD8 /* Support Files */,
 			);
@@ -208,8 +207,8 @@
 		CE12215520FC3C99002E3563 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				CE12215620FC3C99002E3563 /* HTTool.m */,
-				CE12215720FC3C99002E3563 /* HTTool.h */,
+				CE12215820FC4409002E3563 /* UILabel+HTHelper.h */,
+				CE12215920FC4409002E3563 /* UILabel+HTHelper.m */,
 			);
 			name = tool;
 			path = HTUITool/Classes/tool;
@@ -249,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				945B524122B73A005748D3D8A832DB56 /* HTUITool-umbrella.h in Headers */,
+				CE12215A20FC4409002E3563 /* UILabel+HTHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,8 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE12215B20FC4409002E3563 /* UILabel+HTHelper.m in Sources */,
 				A7EF7E32AA4C07F2459A35C001B34CD7 /* HTUITool-dummy.m in Sources */,
-				3C1520839FC50DC43F13D7F55F2FF8B3 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
