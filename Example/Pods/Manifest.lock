@@ -20,7 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - HTUITool (0.2.0):
+  - HTUITool (0.2.1):
     - AFNetworking (~> 2.3)
 
 DEPENDENCIES:
@@ -36,7 +36,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  HTUITool: ca4e1c4a7c6833983c2362314b05758d0aad78fc
+  HTUITool: dda66cf6339d4ea37544a03b1a8261016d0227a6
 
 PODFILE CHECKSUM: 84b60dff14b0095851ede5605e44b3e256f99cad
 

@@ -1,6 +1,6 @@
 {
   "name": "HTUITool",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "summary": "我的ui组件",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/abugtao/HTUITool",
@@ -13,12 +13,17 @@
   },
   "source": {
     "git": "https://github.com/abugtao/HTUITool.git",
-    "tag": "0.2.0"
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "HTUITool/Classes/**/*",
+  "resource_bundles": {
+    "HTUITool": [
+      "HTUITool/Assets/*.png"
+    ]
+  },
   "dependencies": {
     "AFNetworking": [
       "~> 2.3"
