@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HTUITool'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = '我的ui组件'
 
 # This description is used to generate tags and improve search results.
