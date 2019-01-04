@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UILabel+HTHelper.h"
 
 FOUNDATION_EXPORT double HTUIToolVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTUIToolVersionString[];

@@ -7,7 +7,7 @@
 //
 
 #import "HTViewController.h"
-
+#import "UILabel+HTHelper.h"
 @interface HTViewController ()
 
 @end
@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning

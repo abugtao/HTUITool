@@ -24,4 +24,7 @@
 
 //行高
 - (void)setLineHeightMargin:(CGFloat)margin;
+
+
++(UIImage *)test;
 @end

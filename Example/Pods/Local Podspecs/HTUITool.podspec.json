@@ -1,9 +1,9 @@
 {
   "name": "HTUITool",
-  "version": "0.1.0",
-  "summary": "A short description of HTUITool.",
+  "version": "0.2.0",
+  "summary": "我的ui组件",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/abugtao@163.com/HTUITool",
+  "homepage": "https://github.com/abugtao/HTUITool",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "abugtao@163.com": "zhanghaitao@baoyinxiaofei.com"
   },
   "source": {
-    "git": "https://github.com/abugtao@163.com/HTUITool.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/abugtao/HTUITool.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "HTUITool/Classes/**/*"
+  "source_files": "HTUITool/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.3"
+    ]
+  }
 }

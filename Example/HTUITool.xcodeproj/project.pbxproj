@@ -60,12 +60,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6AC13B5F1CDE959FC10643DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6AC13B5F1CDE959FC10643DB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7BCA2A83AE9B81D4BEB55FD8 /* HTUITool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HTUITool.podspec; path = ../HTUITool.podspec; sourceTree = "<group>"; };
+		7BCA2A83AE9B81D4BEB55FD8 /* HTUITool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HTUITool.podspec; path = ../HTUITool.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C49DA633D3A333288F59788C /* Pods_HTUITool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTUITool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB4790BCDF536362269BEC32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CB4790BCDF536362269BEC32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CE1221A620FF5FD8002E3563 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		CE1221A820FF5FD8002E3563 /* UILabel+HTHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HTHelper.m"; sourceTree = "<group>"; };
+		CE1221A920FF5FD8002E3563 /* UILabel+HTHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+HTHelper.h"; sourceTree = "<group>"; };
 		DF755B8AB9A2BB1953B85FD3 /* Pods-HTUITool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTUITool_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTUITool_Tests/Pods-HTUITool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +112,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				CE1221A520FF5FD8002E3563 /* Classes */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for HTUITool */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -196,6 +200,25 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		CE1221A520FF5FD8002E3563 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CE1221A620FF5FD8002E3563 /* .gitkeep */,
+				CE1221A720FF5FD8002E3563 /* tool */,
+			);
+			name = Classes;
+			path = ../HTUITool/Classes;
+			sourceTree = "<group>";
+		};
+		CE1221A720FF5FD8002E3563 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				CE1221A820FF5FD8002E3563 /* UILabel+HTHelper.m */,
+				CE1221A920FF5FD8002E3563 /* UILabel+HTHelper.h */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +231,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				413B0B85A212F97B91148FB2 /* [CP] Embed Pods Frameworks */,
-				1E5E6C7BA8250D44C89638B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,8 +249,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				CC1773C339254064C900ACBF /* [CP] Embed Pods Frameworks */,
-				81E216DC4DC07198FC9B6935 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,21 +317,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E5E6C7BA8250D44C89638B2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTUITool_Example/Pods-HTUITool_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		413B0B85A212F97B91148FB2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,10 +324,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HTUITool_Example/Pods-HTUITool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/HTUITool/HTUITool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTUITool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,21 +355,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		81E216DC4DC07198FC9B6935 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTUITool_Tests/Pods-HTUITool_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A95415D00182DB9876E3FABF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,21 +371,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC1773C339254064C900ACBF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTUITool_Tests/Pods-HTUITool_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -3,7 +3,7 @@
 //  HTUITool
 //
 //  Created by user on 2018/7/16.
-//修改组件   ...
+//修改组件   ...vf
 
 #import "UILabel+HTHelper.h"
 
@@ -106,5 +106,24 @@
     [style setLineBreakMode:NSLineBreakByTruncatingTail];
     [text addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0,  self.text.length)];
     [self setAttributedText: text];
+}
+
+
++(UIImage *)test{
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    //图片名称要写全称
+    NSString *patch = [currentBundle pathForResource:@"user@2x.png" ofType:nil inDirectory:@"BMCCommon.bundle"];
+    UIImage *myimage = [UIImage imageWithContentsOfFile:patch];
+    
+    //    UIStoryboard *board = [UIStoryboard storyboardWithName:@"aa" bundle:[NSBundle bundleForClass:[self class]]];
+    
+    CGFloat myscale =[UIScreen mainScreen].scale;
+    NSString *str =[NSString stringWithFormat:@"BMCCommon.bundle/user@%.0fx.png",myscale];
+    UIImage *image = [UIImage imageNamed:str];
+    
+    
+    
+    
+    return image;
 }
 @end
